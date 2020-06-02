@@ -16,6 +16,7 @@ window.onload = function() {
         .then(data=>{
             main_div.style.display = 'flex';
             main_div.innerHTML = '';
+            address.value = "";
             if(data.error){
                 console.log(data.error)
                 //const result = document.getElementById('result')
@@ -40,10 +41,10 @@ window.onload = function() {
                 var add_div = document.createElement('div');
                 var add_img = document.createElement('img')
                 add_img.src = 'https://img.pngio.com/home-flat-free-icon-of-snipicons-flat-flat-png-512_512.png'
-                var address = document.createElement('p');
-                address.innerHTML = "Location : "+data.address;
+                var location = document.createElement('p');
+                location.innerHTML = "Location : "+data.address;
                 add_div.appendChild(add_img)
-                add_div.appendChild(address)
+                add_div.appendChild(location)
                 weather_div.appendChild(add_div)
 
                 var fore_div = document.createElement('div');
