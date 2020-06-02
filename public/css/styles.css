@@ -7,6 +7,13 @@
 body{
     font-family: sans-serif;
     overflow-x: hidden !important;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://i.pinimg.com/originals/48/a8/e4/48a8e4e658b85a3303e99390e35e5e9c.jpg');
 }
 
 .container,form, #result{
@@ -20,6 +27,7 @@ h1{
 
 p{
     margin: 10px 0;
+    color: white;
 }
 
 .header{
@@ -79,20 +87,39 @@ form button{
 
 #result{
     display: flex;
+    background: rgba(0,0,0,0.6);
     border: 1px solid rgba(0, 0, 0, 0.26);
     overflow-x: hidden !important;
     flex-wrap: wrap;
 }
 
-#result img{
+#result .image_div img{
     width: 200px;
     height: 100%;
 }
 
-#result p{
-    color:rgba(0, 0, 0, 0.75);
+.weather_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_div div{
+    margin: 0 15px;
+}
+
+.weather_div div img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+#result div p{
+    /* color:rgba(0, 0, 0, 0.75); */
     font-size: 1rem;
-    margin-left: 20px;
+    color: white;
+    display: inline-block;
 }
 
 /* #result p::before{
