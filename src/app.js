@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express();
 const hbs = require('hbs')
+const port = process.env.PORT || 5000;
 const geocode = require('./utils/geocode')
 
 const publicPath = path.resolve(__dirname,'../public');
@@ -76,4 +77,4 @@ app.get('*',(req,res)=>{
     res.send('404 Page not found')
 })
 
-app.listen(5000);
+app.listen(port);
