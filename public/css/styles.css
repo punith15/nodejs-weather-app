@@ -105,7 +105,7 @@ form button{
 }
 
 .weather_div div{
-    margin: 0 15px;
+    margin: 0 2rem;
 }
 
 .weather_div div img{
@@ -115,14 +115,12 @@ form button{
     margin: 0 auto;
 }
 
-#result div p{
-    /* color:rgba(0, 0, 0, 0.75); */
-    font-size: 1rem;
+#result div h3,#result div p{
     color: white;
+    text-align: center;
 }
 
-/* #result p::before{
-    content: '';
-    border-left: 4px solid blueviolet;
-    margin-right: 5px;
-} */
+#result div p{
+    font-size: 0.8rem;
+    color: rgb(165, 165, 165);
+}
