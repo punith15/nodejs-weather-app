@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
     console.log(address);
 
-    fetch('http://localhost:5000/weather?address='+address)
+    fetch('/weather?address='+address)
     .then(res=>res.json())
     .then(data=>{
         main_div.style.display = 'flex';
