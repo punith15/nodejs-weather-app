@@ -41,18 +41,24 @@ window.onload = function() {
                 var add_div = document.createElement('div');
                 var add_img = document.createElement('img')
                 add_img.src = 'https://img.pngio.com/home-flat-free-icon-of-snipicons-flat-flat-png-512_512.png'
-                var location = document.createElement('p');
-                location.innerHTML = "Location : "+data.address;
+                var loc_title = document.createElement('p');
+                loc_title.innerText = "Location";
+                var location = document.createElement('h3');
+                location.innerText = data.address;
                 add_div.appendChild(add_img)
+                add_div.appendChild(loc_title)
                 add_div.appendChild(location)
                 weather_div.appendChild(add_div)
 
                 var fore_div = document.createElement('div');
                 var fore_img = document.createElement('img')
                 fore_img.src = 'https://i.dlpng.com/static/png/3957956_thumb.png'
-                var forecast = document.createElement('p');
-                forecast.innerHTML = "Forecast : "+data.forecast;
+                var fore_title = document.createElement('p');
+                fore_title.innerText = "Forecast";
+                var forecast = document.createElement('h3');
+                forecast.innerText = data.forecast;
                 fore_div.appendChild(fore_img)
+                fore_div.appendChild(fore_title)
                 fore_div.appendChild(forecast)
                 weather_div.appendChild(fore_div)
 
@@ -60,36 +66,48 @@ window.onload = function() {
                 var temp_div = document.createElement('div');
                 var temp_img = document.createElement('img')
                 temp_img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-31/650/temperature-thermometer-hot-512.png'
-                var temperature = document.createElement('p');
-                temperature.innerHTML = "Temperature : "+data.temperature;
+                var temp_title = document.createElement('p');
+                temp_title.innerText = "Temperature";
+                var temperature = document.createElement('h3');
+                temperature.innerText = data.temperature;
                 temp_div.appendChild(temp_img)
+                temp_div.appendChild(temp_title)
                 temp_div.appendChild(temperature)
                 weather_div.appendChild(temp_div)
 
                 var ws_div = document.createElement('div');
                 var ws_img = document.createElement('img')
                 ws_img.src = 'https://cdn2.iconfinder.com/data/icons/weather-blue-filled-line/32/weather_blow_wind_air_windy_direction_nature-512.png'
-                var wind_speed = document.createElement('p');
-                wind_speed.innerHTML = "Wind Speed : "+data.wind_speed;
+                var ws_title = document.createElement('p');
+                ws_title.innerText = "Wind Speed";
+                var wind_speed = document.createElement('h3');
+                wind_speed.innerText = "data.wind_speed";
                 ws_div.appendChild(ws_img)
+                ws_div.appendChild(ws_title)
                 ws_div.appendChild(wind_speed)
                 weather_div.appendChild(ws_div)
 
                 var wd_div = document.createElement('div');
                 var wd_img = document.createElement('img')
                 wd_img.src = 'https://cdn.iconscout.com/icon/free/png-512/flag-1107-781160.png'
-                var wind_dir = document.createElement('p');
-                wind_dir.innerHTML = "Wind Direction : "+data.wind_dir;
+                var wd_title = document.createElement('p');
+                wd_title.innerText = "Wind Direction";
+                var wind_dir = document.createElement('h3');
+                wind_dir.innerHTML = data.wind_dir;
                 wd_div.appendChild(wd_img)
+                wd_div.appendChild(wd_title)
                 wd_div.appendChild(wind_dir)
                 weather_div.appendChild(wd_div)
 
                 var hum_div = document.createElement('div');
                 var hum_img = document.createElement('img')
                 hum_img.src = 'https://cdn.iconscout.com/icon/free/png-512/humidity-forecast-hydration-precipitation-temperature-weather-38924.png'
-                var humidity = document.createElement('p');
-                humidity.innerHTML = "Humidity : "+data.humidity;
+                var hum_title = document.createElement('p');
+                hum_title.innerText = "Humidity";
+                var humidity = document.createElement('h3');
+                humidity.innerHTML = data.humidity;
                 hum_div.appendChild(hum_img)
+                hum_div.appendChild(hum_title)
                 hum_div.appendChild(humidity)
                 weather_div.appendChild(hum_div)
                 
