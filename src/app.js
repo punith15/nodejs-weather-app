@@ -47,7 +47,7 @@ app.get('/weather',(req,res)=>{
                 const weather = data.current
                 res.send({
                     address : req.query.address,
-                    forecast : 'It\'s '+weather.weather_descriptions,
+                    forecast : weather.weather_descriptions,
                     temperature : weather.temperature,
                     weather_icon : weather.weather_icons,
                     wind_speed : weather.wind_speed,
